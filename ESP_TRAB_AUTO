@@ -1,0 +1,61 @@
+import pyautogui as pag
+import time as t
+
+# Autor: Pitagorasss
+# GitHub: https://github.com/pitagorasss/Projetos-em-Python
+# Espaço de trabalho automatizado [abre aplicações pré-definidas] para estudo e trabalho.
+# A princípio o código está configurado para abrir o navegador Chrome, o VSCode e o Spotify, podendo ser modificado.
+
+
+# Abrir navegador [Chrome como padrão]
+def abrir_navegador(
+    Chrome: str,
+    tempo_espera: int = 1,
+    creditos: str = "https://github.com/pitagorasss/Projetos-em-Python",
+):
+    pag.press("Win")
+    t.sleep(tempo_espera)
+    pag.write(Chrome)
+    t.sleep(tempo_espera)
+    pag.press("enter")
+    t.sleep(tempo_espera)
+
+    # Abrir site no Chrome ao inicializar:
+    pag.write(creditos)
+    t.sleep(tempo_espera)
+    pag.press("enter")
+    t.sleep(5)
+
+
+# Abrir IDE [VSCode como padrão]
+def abrir_IDE(
+    VSCode: str,
+    tempo_espera: int = 1,
+):
+    pag.press("Win")
+    t.sleep(tempo_espera)
+    pag.write(VSCode)
+    t.sleep(tempo_espera)
+    pag.press("enter")
+    t.sleep(tempo_espera)
+
+
+# Abrir Spotify
+def abrir_Spotify(
+    Spotify: str,
+    tempo_espera: int = 1,
+):
+    pag.press("Win")
+    t.sleep(tempo_espera)
+    pag.write(Spotify)
+    t.sleep(tempo_espera)
+    pag.press("enter")
+    t.sleep(tempo_espera)
+
+
+# Chamando as funções para abrir as aplicações
+
+abrir_navegador("Chrome")
+abrir_IDE("VSCode")
+abrir_Spotify("Spotify")
+print("Espaço de trabalho iniciado com sucesso!")
