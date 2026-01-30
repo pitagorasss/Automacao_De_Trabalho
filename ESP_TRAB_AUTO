@@ -2,7 +2,7 @@ import pyautogui as pag
 import time as t
 
 # Autor: Pitagorasss
-# GitHub: https://github.com/pitagorasss/Projetos-em-Python
+# GitHub: https://github.com/pitagorasss/Automacao_De_Trabalho
 # Espaço de trabalho automatizado [abre aplicações pré-definidas] para estudo e trabalho.
 # A princípio o código está configurado para abrir o navegador Chrome, o VSCode e o Spotify, podendo ser modificado.
 
